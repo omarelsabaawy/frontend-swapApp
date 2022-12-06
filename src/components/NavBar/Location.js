@@ -13,7 +13,7 @@ function Location(props) {
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu variant="dark">
-                        <Dropdown.Item href="#/action-1" active>
+                        <Dropdown.Item href="#/action-1">
                             <FaCrosshairs /> Get Current Location
                         </Dropdown.Item>
                         <Dropdown.Divider />

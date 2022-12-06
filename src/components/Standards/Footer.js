@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../NavBar/NavImages/footerLogo.png'
+import logo from '../NavBar/NavImages/logo.png'
 import payments from './payment.png'
 import { CiMail } from "react-icons/ci";
 import { FaExchangeAlt } from 'react-icons/fa';
@@ -15,7 +15,7 @@ function footer() {
                             <div class="footer__logo">
                                 <Link to="#"><img src={logo} alt="" /></Link>
                             </div>
-                            <p>Swappha app is the first online platform for swapping and selling items between Users.</p>
+                            <p>SWAP.IT app is the first online platform for swapping and selling items between Users.</p>
                             <Link to="#"><img src={payments} alt="" /></Link>
                         </div>
                     </div>
@@ -59,7 +59,7 @@ function footer() {
                         <div class="footer__copyright__text">
                             <p>Copyright ©
                                 2022
-                                All rights reserved by <Link to="/" >SWAPPHA </Link> <FaExchangeAlt />
+                                All rights reserved by <Link to="/" >SWAP.IT </Link> <FaExchangeAlt />
                             </p>
                         </div>
                     </div>

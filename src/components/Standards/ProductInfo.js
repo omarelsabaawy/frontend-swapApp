@@ -88,8 +88,8 @@ function ProductInfo(props) {
                     <div style={{ paddingTop: 10 }}>
                         <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Add this Item to your wishlist, if you want to save it for a future swapping.</Tooltip>}>
                             <span className="d-inline-block">
-                                <Button onClick={<Link to="/wishList"></Link>} style={{ backgroundColor: '#255459', borderColor: '#255459', borderRadius: '1rem', width: '170px' }}>
-                                    <Link style={{ color: '#fff' }} to="/">Add to your Wishlist</Link>
+                                <Button onClick={<Link to="/wishList"></Link>} style={{ backgroundColor: '#fff', borderColor: '#255459', width: '170px', height: '70px' }}>
+                                    <Link style={{ color: '#255459', fontWeight: 'bold' }} to="/">Add to Wishlist</Link>
                                 </Button>
                             </span>
                         </OverlayTrigger>
@@ -97,8 +97,8 @@ function ProductInfo(props) {
                     <div style={{ paddingTop: 10 }}>
                         <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Add this Item to your wishlist, if you want to save it for a future swapping.</Tooltip>}>
                             <span className="d-inline-block">
-                                <Button onClick={<Link to="/Contact"></Link>} style={{ backgroundColor: '#255459', borderColor: '#255459', borderRadius: '1rem', width: '170px' }}>
-                                    Contact the Owner
+                                <Button onClick={<Link to="/Contact"></Link>} style={{ backgroundColor: '#fff', borderColor: '#255459', width: '170px', height: '70px' }}>
+                                    <Link style={{ color: '#255459', fontWeight: 'bold' }} to="/">Contact Owner</Link>
                                 </Button>
                             </span>
                         </OverlayTrigger>

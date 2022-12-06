@@ -4,7 +4,7 @@ import Badge from 'react-bootstrap/Badge';
 import Button from 'react-bootstrap/Button';
 import { OverlayTrigger, Tooltip } from 'react-bootstrap'
 
-import logo from './NavImages/Swap.png';
+import logo from './NavImages/logo.png';
 
 import Location from './Location';
 import Items from './Items';
@@ -104,6 +104,7 @@ function NoResponsiveness() {
                                     </Button>
                                 </OverlayTrigger>
                             </Link>
+
                         </div>
                     </div>
                 </div>

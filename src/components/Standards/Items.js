@@ -11,6 +11,7 @@ import { FaSearch, FaArrowUp, FaArrowDown, FaArrowRight } from 'react-icons/fa';
 import Product from './Product'
 import PreLoader from './PreLoader';
 import ErrorMessage from '../Screens/ErrorMessage';
+import { getError } from '../../utils';
 
 
 const reducer = (state, action) => {
@@ -33,6 +34,7 @@ function Items() {
     const [{ loading, products, error }, dispatch] = useReducer(logger(reducer), {
         loading: true, products: [], error: ''
     });
+
     useEffect(() => {
         const fetchData = async () => {
             dispatch({ type: 'FETCH_REQUEST' })
@@ -40,7 +42,7 @@ function Items() {
                 const result = await axios.get('/api/products');
                 dispatch({ type: 'FETCH_SUCCESS', payload: result.data })
             } catch (error) {
-                dispatch({ type: 'FETCH_FAIL', payload: error.message })
+                dispatch({ type: 'FETCH_FAIL', payload: getError(error) })
             }
         }
         fetchData();
@@ -123,7 +125,7 @@ function Items() {
                         <PreLoader />
                     ) :
                         error ? (
-                            <ErrorMessage />
+                            <ErrorMessage> {error} </ErrorMessage>
                         ) : (
                             products.map((product) => (
                                 <Col sm={12} md={6} lg={3}>

@@ -618,3 +618,8 @@ code {
   letter-spacing: 1px;
   z-index: 99;
 }
+
+
+#map {
+  height: 180px
+}

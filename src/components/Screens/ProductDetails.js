@@ -9,6 +9,9 @@ import HorzLine from '../Standards/HorzLine'
 import ProductInfo from '../Standards/ProductInfo';
 import LastViewedItems from '../Standards/LastViewedItems';
 import ErrorMessage from './ErrorMessage';
+import ChatBot from "../ChatBot/ChatBot";
+import { getError } from '../../utils';
+
 
 
 const reducer = (state, action) => {
@@ -38,7 +41,7 @@ function ProductDetails() {
                 const result = await axios.get(`/api/products/slug/${slug}`);
                 dispatch({ type: 'FETCH_SUCCESS', payload: result.data })
             } catch (error) {
-                dispatch({ type: 'FETCH_FAIL', payload: error.message })
+                dispatch({ type: 'FETCH_FAIL', payload: getError(error) })
             }
         }
         fetchData();
@@ -51,7 +54,7 @@ function ProductDetails() {
                 loading ?
                     (<PreLoader />)
                     : error ? (
-                        <ErrorMessage />
+                        <ErrorMessage> {error} </ErrorMessage>
                     ) :
                         (
                             <div>
@@ -62,7 +65,7 @@ function ProductDetails() {
                             </div>
                         )
             }
-
+            <ChatBot />
             <Footer />
         </div>
     )

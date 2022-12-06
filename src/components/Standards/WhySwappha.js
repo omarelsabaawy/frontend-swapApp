@@ -9,7 +9,7 @@ function WhySwappha() {
 
             <Row style={{ margin: 50 }}>
                 <Col sm={12} md={6} lg={6}>
-                    <h2 style={{ textAlign: 'Left', marginBottom: 20 }}>Swappha app is the first online platform for swapping and selling items between Users.</h2>
+                    <h2 style={{ textAlign: 'Left', marginBottom: 20 }}>SWAP.IT app is the first online platform for swapping and selling items between Users.</h2>
                 </Col>
                 <Col sm={12} md={6} lg={6}>
                     <div style={{ textAlign: 'center' }}> <h5 style={{ color: '#5D878C' }}> <span style={{ fontSize: '20px' }}><SiApostrophe /> </span> Start by adding your current location, and then start searching for the item you want, and if it is available on the website with a user

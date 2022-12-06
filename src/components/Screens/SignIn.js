@@ -4,6 +4,8 @@ import Footer from '../Standards/Footer';
 import Breadcrumb from '../Standards/Breadcrumb'
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
+import ChatBot from "../ChatBot/ChatBot";
+
 
 // import { FaGooglePlus, FaApple, FaFacebookSquare } from 'react-icons/fa'
 // import { Col, Row } from 'react-bootstrap';
@@ -86,7 +88,7 @@ function SignIn() {
                 </div>
 
             </div>
-
+            <ChatBot />
             <Footer />
         </div>
     )

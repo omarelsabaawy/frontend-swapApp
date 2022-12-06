@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 
 import image4 from './baner-right-image-04.jpg'
 import ps from './baner-right-image-04.jpg';
+
 function Categrie() {
     return (
         <div>
@@ -14,7 +15,7 @@ function Categrie() {
                             <div class="left-content" style={{ marginBottom: 20 }}>
                                 <div class="thumb">
                                     <div class="inner-content">
-                                        <h4>Swappha now</h4>
+                                        <h4>SWAP.IT now</h4>
                                         <span>Swap the needless item with a needed item now</span>
                                         <div class="main-border-button">
                                             <Link to="#">Swap Now!</Link>
@@ -88,6 +89,7 @@ function Categrie() {
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>

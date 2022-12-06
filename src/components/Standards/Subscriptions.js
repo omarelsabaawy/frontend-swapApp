@@ -4,7 +4,7 @@ import { Button, Col, Form, Row } from 'react-bootstrap'
 function Subscriptions() {
     return (
         <div style={{ backgroundColor: '#255459', textAlign: 'center', paddingTop: 50 }}>
-            <h3 style={{ color: 'white' }} >Subscribe now with SWAPPHA get notified by any new item.</h3>
+            <h3 style={{ color: 'white' }} >Subscribe now with SWAP.IT get notified by any new item.</h3>
             <br />
             <div className='subs'>
                 <h5>Get notified by any new item you are interested in by Subscribing to ours newsletter</h5>

@@ -7,6 +7,8 @@ import HorzLine from '../Standards/HorzLine';
 import Subscriptions from '../Standards/Subscriptions';
 import Footer from '../Standards/Footer'
 import { Helmet } from 'react-helmet-async';
+import ChatBot from "../ChatBot/ChatBot";
+import MyMap from '../Map/MyMap';
 
 function HomeScreen() {
     return (
@@ -23,7 +25,7 @@ function HomeScreen() {
 
             <HorzLine />
 
-            <h3 className='homePageH3' >Why SWAPPHA?</h3>
+            <h3 className='homePageH3' >Why SWAP.IT?</h3>
             <WhySwappha />
 
 
@@ -31,9 +33,9 @@ function HomeScreen() {
                 <Subscriptions />
             </div>
 
-            <div style={{ height: '250px' }}>
-                <h2 style={{ marginTop: '250px', textAlign: 'center' }}>Google Map</h2>
-            </div>
+            {/* <MyMap /> */}
+
+            <ChatBot />
 
             <Footer />
 
