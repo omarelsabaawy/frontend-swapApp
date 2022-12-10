@@ -54,9 +54,11 @@ function Product(props) {
         <div>
             <Card key={product.slug} className='CardHome' style={{ marginTop: "30px", borderRadius: '1rem' }}>
                 <Card.Header style={{ backgroundColor: 'transparent' }}>
-                    <Card.Link href={`/product/${product.slug}`}>
-                        <Card.Img style={{ maxHeight: '310px', maxwidth: '250px', borderRadius: '0.3rem' }} variant="top" src={product.image} alt={product.name} />
-                    </Card.Link>
+                    <div style={{ maxHeight: 310 }}>
+                        <Card.Link href={`/product/${product.slug}`}>
+                            <Card.Img style={{ maxHeight: '310px', maxwidth: '250px', borderRadius: '0.3rem' }} variant="top" src={product.image} alt={product.name} />
+                        </Card.Link>
+                    </div>
                 </Card.Header>
                 <Card.Body>
                     <Card.Link href={`/product/${product.slug}`} style={{ color: 'black' }}>{product.name}</Card.Link>

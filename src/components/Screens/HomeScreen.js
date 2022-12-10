@@ -8,7 +8,7 @@ import Subscriptions from '../Standards/Subscriptions';
 import Footer from '../Standards/Footer'
 import { Helmet } from 'react-helmet-async';
 import ChatBot from "../ChatBot/ChatBot";
-import MyMap from '../Map/MyMap';
+import MapComp from '../Standards/MapComp';
 
 function HomeScreen() {
     return (
@@ -33,7 +33,7 @@ function HomeScreen() {
                 <Subscriptions />
             </div>
 
-            {/* <MyMap /> */}
+            <MapComp />
 
             <ChatBot />
 
